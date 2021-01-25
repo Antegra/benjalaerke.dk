@@ -1,0 +1,133 @@
+body
+{
+	background-color: #313131;
+	margin: 0px;
+}
+
+/* Navigationsbar */
+.cell {
+	display: flex;    
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #232323;
+	align-items: center;
+	margin-top: 0px;
+}
+
+.cell :first-child {
+	height: 5vw;
+}
+
+.cell img {
+	padding-left: 10px;
+}
+ul {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px;
+	font-size: 2.327vw;
+	list-style: none;
+	padding-right: 50px;
+}
+
+li a {
+	display: flex;
+	text-decoration: none;
+	color: #FF6821;
+	font-family: 'pacifico';
+	justify-content: space-evenly;
+	padding: 10px;
+	align-items: center;
+}
+
+li a:hover {
+	display: flex;
+	background-color: #161616;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0em 1em;
+	border-radius: 1em;
+}
+
+/* velkomst */
+
+.grid-container {
+	margin-top: 100px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr 1fr 1fr 0.6fr;
+  grid-template-rows: 1fr;
+  gap: 100px 20px;
+  grid-template-areas:
+    " . welcome_txt welcome_txt profilimg profilimg profilimg . " ;
+}
+
+.welcome_txt { 
+	grid-area: welcome_txt; 
+	color: #FAEBD7;
+	font-size: 1vw;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.profilimg {
+ grid-area: profilimg;
+ max-width:40vw;
+ box-shadow: 2px 2px  #FF6821;
+ padding: 0px;
+ justify-self: end;
+}
+
+/* Footer */
+
+.grid-container2 {
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-content: center;
+  gap: 0px 5px;
+  grid-template-areas:
+    " . email facebook linkedin twitter twitch copy . " ;
+    background-color: #232323;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 5vw;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	color:white;  
+	text-align: center;
+	font-size: 1vW;
+}
+
+
+footer p {
+
+}
+.some {
+	max-height: 3vw;
+}
+
+.email {
+	grid-area: email
+}
+
+.facebook {
+	grid-area: facebook
+}
+
+.linkedin {
+	grid-area: linkedin
+}
+
+.twitter {
+	grid-area: twitter
+}
+
+.twitch {
+	grid-area: twitch
+}
+
+.copy {
+	grid-area: copy
+}
